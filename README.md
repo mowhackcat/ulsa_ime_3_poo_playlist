@@ -8,20 +8,22 @@ Llena cada espacio conforme avances en las fases de [PRACTICA.md](PRACTICA.md).
 
 **1.1 El problema con mis propias palabras**
 
+Una app de musica organiza las playlists con musica y podcats, una playlist tiene su nombre, cada pista con su titulo y organizacion, las canciones luego se clasifican por artistas y genero, luego los podcasts se clasifican por anfitrion y  numero de episodios
+
 [Inserta aquí tu respuesta]
 
 **1.2 Sustantivos (posibles clases) y verbos (posibles métodos)**
 
-Sustantivos: _____
+Sustantivos: Cancion, Podcast, PLaylist, Pista,
 
-Verbos: _____
+Verbos: Titulo, Nombre,Artista, Genero , Anfitrion y numero de episodios
 
 **1.3 Relaciones** (completa con "es un", "tiene un" o "usa un")
 
-*   Una canción _____ pista.
-*   Un podcast _____ pista.
-*   Una pista _____ duración.
-*   Una playlist _____ canción.
+*   Una canción es una pista.
+*   Un podcast es una pista.
+*   Una pista tiene una duración.
+*   Una playlist usa una canción.
 
 ## Fase 2. Diseñar la solución
 
@@ -33,9 +35,9 @@ Verbos: _____
 
 | Relación | Tipo | ¿Por qué? |
 | --- | --- | --- |
-| Cancion - Pista | _____ | _____ |
-| Podcast - Pista | _____ | _____ |
-| Pista - Duracion | _____ | _____ |
+| Cancion - Pista | __Es una__ | _Es algo que se puede reproducir___ |
+| Podcast - Pista | ___Es una_ | __Es algo que se puede reproducir__ |
+| Pista - Duracion | ___Tiene una__ | __Info_ |
 | Playlist - Cancion | _____ | _____ |
 | Playlist - Podcast | _____ | _____ |
 

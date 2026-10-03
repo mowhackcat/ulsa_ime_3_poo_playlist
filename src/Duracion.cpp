@@ -5,6 +5,14 @@
 #include <iostream>
 
 Duracion::Duracion(int min, int seg) : minutos(min), segundos(seg) {
+    if(min < 0){
+        minutos = 0;
+        segundos = 0;
+    } else if(seg >= 60){
+        minutos ++;
+        segundos = segundos -15;
+    }
+    
     // TODO 1.1: valida y normaliza.
     //   - Si min o seg son negativos, la duración queda en 0:00.
     //   - Si seg es mayor a 59, convierte el excedente en minutos
@@ -16,8 +24,10 @@ int Duracion::getMinutos() const { return minutos; }
 
 int Duracion::getSegundos() const { return segundos; }
 
-// TODO 1.2: implementa  int Duracion::totalSegundos() const
+int Duracion::totalSegundos() const {return Total; }// TODO 1.2: implementa  int Duracion::totalSegundos() const
 //   Devuelve la duración completa expresada en segundos.
 
-// TODO 1.3: implementa  void Duracion::imprimir() const
+void Duracion::imprimir() const {
+
+}// TODO 1.3: implementa  void Duracion::imprimir() const
 //   Imprime con el formato m:ss (por ejemplo 3:05, no 3:5).
