@@ -10,19 +10,20 @@
 #include "Duracion.h"
 
 class Pista {
-private:
+protected:
     std::string titulo;
     Duracion duracion;
 
 public:
+    Pista() {std::cout << "Construye Pista\n";}
     Pista(const std::string& titulo, int min, int seg);
 
     std::string getTitulo() const;
     Duracion getDuracion() const;
 
-    // TODO 2.2: declara  void setTitulo(const std::string& nuevoTitulo);
+    void setTitulo(const std::string& nuevoTitulo);// TODO 2.2: declara  void setTitulo(const std::string& nuevoTitulo);
 
-    // TODO 2.3: declara  void mostrarInfo() const;
+    void mostrarInfo() const;// TODO 2.3: declara  void mostrarInfo() const;
 };
 
 #endif

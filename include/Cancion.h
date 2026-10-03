@@ -8,12 +8,18 @@
 
 #include "Pista.h"
 
-// TODO 3.1: declara la clase Cancion derivada de Pista con herencia pública.
-//   Atributos privados: artista, genero.
-//   Constructor: recibe titulo, min, seg, artista y genero.
-//   Accedentes const: getArtista(), getGenero().
-//   void mostrar() const;
-//
+class Cancion : public Pista {
+    private:
+std::string genero;      // TODO 3.1: declara la clase Cancion derivada de Pista con herencia pública.
+std::string artista;      //   Atributos privados: artista, genero.
+
+    public:
+    Cancion() {std:: cout << "inizializando cancion\n";}
+Cancion (const std::string& genero, std::string& artista, std::string& titulo, int& min, int& seg );    //   Constructor: recibe titulo, min, seg, artista y genero.
+std::string getArtista() const;//   Accedentes const: getArtista(), getGenero().
+std::string getGenero() const;
+void mostrar() const;//   void mostrar() const;
+};
 // Pregunta: ¿puede Cancion leer directamente el atributo titulo de Pista?
 // ¿Por qué sí o por qué no?
 

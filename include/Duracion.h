@@ -8,7 +8,6 @@ class Duracion {
 private:
     int minutos;
     int segundos;
-    int Total;
 
 public:
 Duracion() {std::cout << "Construye Duracion\n";}
@@ -16,7 +15,7 @@ Duracion() {std::cout << "Construye Duracion\n";}
 
     int getMinutos() const;
     int getSegundos() const;
-
+    int getDuracion() const;
     int totalSegundos() const;  // TODO 1.2: declara  int totalSegundos() const;
 
     void imprimir() const; // TODO 1.3: declara  void imprimir() const;

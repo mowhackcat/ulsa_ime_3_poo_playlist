@@ -8,6 +8,12 @@
 
 #include "Pista.h"
 
+class Podcast : public Pista {
+    private:
+    std::string anfitrion;
+    int numEpisodios;
+
+};
 // TODO 3.2: declara la clase Podcast derivada de Pista con herencia pública.
 //   Atributos privados: anfitrion, numeroEpisodio.
 //   Constructor, accedentes const y  void mostrar() const;

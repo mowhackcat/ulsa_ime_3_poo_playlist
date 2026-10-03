@@ -7,7 +7,10 @@
 // La Duracion se construye en la lista de inicialización.
 Pista::Pista(const std::string& titulo, int min, int seg)
     : titulo(titulo), duracion(min, seg) {
-    // TODO 2.1: si el título llega vacío, guarda "Sin título".
+    if(titulo.empty()){
+        std::cout << "se guardara sin titulo\n" ;
+       this->titulo = "sin titulo bozo\n";
+    } // TODO 2.1: si el título llega vacío, guarda "Sin título".
     // Pregunta: ¿qué pasaría si quitaras duracion(min, seg) de la
     // lista de inicialización? Pruébalo y lee el error del compilador.
 }
@@ -16,8 +19,16 @@ std::string Pista::getTitulo() const { return titulo; }
 
 Duracion Pista::getDuracion() const { return duracion; }
 
-// TODO 2.2: implementa  void Pista::setTitulo(const std::string& nuevoTitulo)
+void Pista::setTitulo(const std::string& nuevoTitulo){ 
+    if(nuevoTitulo.empty()){
+        std::cout << "se guardara sin titulo\n" ;
+       this->titulo = "sin titulo bozo\n";
+    }
+    this ->titulo = nuevoTitulo;
+};// TODO 2.2: implementa  void Pista::setTitulo(const std::string& nuevoTitulo)
 //   Aplica la misma regla del título vacío.
 
-// TODO 2.3: implementa  void Pista::mostrarInfo() const
+void Pista::mostrarInfo() const { 
+std::cout << Pista::getTitulo() << duracion.getMinutos() << duracion.getSegundos();
+};// TODO 2.3: implementa  void Pista::mostrarInfo() const
 //   Imprime el título y la duración en una sola línea.

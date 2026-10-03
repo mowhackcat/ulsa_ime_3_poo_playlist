@@ -38,8 +38,8 @@ Verbos: Titulo, Nombre,Artista, Genero , Anfitrion y numero de episodios
 | Cancion - Pista | __Es una__ | _Es algo que se puede reproducir___ |
 | Podcast - Pista | ___Es una_ | __Es algo que se puede reproducir__ |
 | Pista - Duracion | ___Tiene una__ | __Info_ |
-| Playlist - Cancion | _____ | _____ |
-| Playlist - Podcast | _____ | _____ |
+| Playlist - Cancion | __Usa__ | ___Almacena las canciones__ |
+| Playlist - Podcast | __Usa__ | ___Almacena los podcasts__ |
 
 ## Fase 3. Implementar
 
@@ -47,7 +47,7 @@ Verbos: Titulo, Nombre,Artista, Genero , Anfitrion y numero de episodios
 
 | # | Duda | Cómo la resolví | Fuente |
 | --- | --- | --- | --- |
-| 1 | _____ | _____ | _____ |
+| 1 | ___Llamar al constructor de Pista desde la lista de inicialización__ | _____ | _____ |
 | 2 | _____ | _____ | _____ |
 | 3 | _____ | _____ | _____ |
 
