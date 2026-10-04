@@ -12,6 +12,7 @@ private:
 
 public:
 Duracion() {}
+~Duracion() {}
     Duracion(int min, int seg);
 
     int getMinutos() const;

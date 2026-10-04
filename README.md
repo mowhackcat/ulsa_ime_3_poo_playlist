@@ -10,7 +10,7 @@ Llena cada espacio conforme avances en las fases de [PRACTICA.md](PRACTICA.md).
 
 Una app de musica organiza las playlists con musica y podcats, una playlist tiene su nombre, cada pista con su titulo y organizacion, las canciones luego se clasifican por artistas y genero, luego los podcasts se clasifican por anfitrion y  numero de episodios
 
-[Inserta aquí tu respuesta]
+
 
 **1.2 Sustantivos (posibles clases) y verbos (posibles métodos)**
 

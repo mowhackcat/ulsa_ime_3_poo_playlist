@@ -31,5 +31,6 @@ void Pista::setTitulo(const std::string& nuevoTitulo){
 void Pista::mostrarInfo() const { 
 std::cout << Pista::getTitulo();
 duracion.imprimir();
+
 };// TODO 2.3: implementa  void Pista::mostrarInfo() const
 //   Imprime el título y la duración en una sola línea.

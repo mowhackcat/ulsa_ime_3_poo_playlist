@@ -13,9 +13,11 @@ class Pista{
 protected:
     std::string titulo;
     Duracion duracion;
+ 
 
 public:
-    Pista() {};
+    Pista() {}
+    ~Pista() {}
     Pista(const std::string& titulo, int min, int seg);
 
     std::string getTitulo() const;

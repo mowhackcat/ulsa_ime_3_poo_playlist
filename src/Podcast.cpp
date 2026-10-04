@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-Podcast::Podcast(const std::string& anfitrion, int numEpisodios, std::string& titulo, int& min, int& seg ): Pista(titulo, min, seg), anfitrion(anfitrion), numEpisodios(numEpisodios){
+Podcast::Podcast(const std::string& anfitrion, int numEpisodios, const std::string& titulo, int min, int seg ): Pista(titulo, min, seg), anfitrion(anfitrion), numEpisodios(numEpisodios){
 
 };
 

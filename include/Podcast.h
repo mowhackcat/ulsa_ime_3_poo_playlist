@@ -14,7 +14,8 @@ class Podcast : public Pista{
     int numEpisodios;
 public:
 Podcast() {}
-Podcast (const std::string& anfitrion, int numEpisodios, std::string& titulo, int& min, int& seg );
+~Podcast() {}
+Podcast (const std::string& anfitrion, int numEpisodios, const std::string& titulo, int min, int seg );
 std::string getAnfitrion() const;
 int getNumEpisodios() const;
 void mostrar() const;

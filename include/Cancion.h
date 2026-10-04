@@ -15,7 +15,8 @@ std::string artista;      //   Atributos privados: artista, genero.
 
     public:
     Cancion() {}
-Cancion (const std::string& genero, std::string& artista, std::string& titulo, int& min, int& seg );    //   Constructor: recibe titulo, min, seg, artista y genero.
+    ~Cancion() {}
+Cancion (const std::string& genero, const std::string& artista, const std::string& titulo, int min, int seg );    //   Constructor: recibe titulo, min, seg, artista y genero.
 std::string getArtista() const;//   Accedentes const: getArtista(), getGenero().
 std::string getGenero() const;
 void mostrar() const;//   void mostrar() const;

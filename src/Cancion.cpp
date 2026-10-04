@@ -3,7 +3,7 @@
 #include "Cancion.h"
 
 #include <iostream>
-Cancion::Cancion (const std::string& genero, std::string& artista, std::string& titulo, int& min, int& seg ) : Pista(titulo, min, seg), genero(genero), artista(artista){
+Cancion::Cancion (const std::string& genero, const std::string& artista, const std::string& titulo, int min, int seg ) : Pista(titulo, min, seg), genero(genero), artista(artista){
 }; // TODO 3.1: implementa el constructor de Cancion.
 //   Llama al constructor de Pista desde la lista de inicialización.
 

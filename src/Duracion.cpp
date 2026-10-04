@@ -1,11 +1,12 @@
 // Implementación de la clase Duracion.
 
 #include "Duracion.h"
+#include <iomanip>
 
 #include <iostream>
 
 Duracion::Duracion(int min, int seg) : minutos(min), segundos(seg) {
-    if(min < 0){
+    if(min < 0 || seg < 0){
         minutos = 0;
         segundos = 0;
     } else if(seg >= 60){
@@ -34,8 +35,8 @@ int Duracion::totalSegundos() const {
 //   Devuelve la duración completa expresada en segundos.
 
 void Duracion::imprimir() const {
-std::cout << getMinutos() << ":" << getSegundos();
-};// TODO 1.3: implementa  void Duracion::imprimir() const
+std::cout << std::setw(2) << std::setfill('0') << getMinutos() << ":" << std::setw(2) << std::setfill('0')<< getSegundos();
+}// TODO 1.3: implementa  void Duracion::imprimir() const
 //   Imprime con el formato m:ss (por ejemplo 3:05, no 3:5).
 
-int Duracion::getDuracion() const {return minutos;}
+int Duracion::getDuracion() const {return totalSegundos();}

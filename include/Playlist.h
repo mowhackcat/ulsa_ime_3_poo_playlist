@@ -6,6 +6,7 @@
 
 #include <string>
 #include <vector>
+#include <cstddef>
 
 #include "Cancion.h"
 #include "Duracion.h"
@@ -19,7 +20,8 @@ std::vector<Podcast*> podcasts;
 
 public:
 Playlist(){}
-Playlist(std::vector<Cancion*> canciones, std::vector<Podcast*> podcasts);
+~Playlist() {}
+Playlist(const std::string& nombre);
 bool agregarCancion(Cancion* cancion);
 bool agregarPodcast(Podcast* podcast);
 int cantidadPistas() const;
