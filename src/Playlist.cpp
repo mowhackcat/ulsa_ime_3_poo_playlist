@@ -1,7 +1,7 @@
 // Implementación de la clase Playlist.
 
-#include "../include/Playlist.h"
-#include <iostream>
+#include "../include/Playlist.h"//tarde 3 horas en soluciionar un error aqui
+#include <iostream>//no se como o por que pero desaparecio por arte de magia
 
 Playlist::Playlist(std::vector<Cancion*> canciones, std::vector<Podcast*> podcasts): nombre(nombre), canciones(canciones), podcasts(podcasts) {}
     
