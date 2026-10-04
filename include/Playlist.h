@@ -11,22 +11,21 @@
 #include "Duracion.h"
 #include "Podcast.h"
 
-class Playlists{
+class Playlist{
 private:
 std::string nombre;
 std::vector<Cancion*> canciones;
 std::vector<Podcast*> podcasts;
 
 public:
-    Playlists(){}
-Playlists (std::string nombre, std::vector<Cancion*> canciones, std::vector<Podcast*> podcasts );
+Playlist(){}
+Playlist(std::vector<Cancion*> canciones, std::vector<Podcast*> podcasts);
 bool agregarCancion(Cancion* cancion);
 bool agregarPodcast(Podcast* podcast);
 int cantidadPistas() const;
-void mostrar() const;
 Duracion duracionTotal() const;
+void mostrar() const;
 };
-
 // TODO 4.1: declara la clase Playlist.
 //   Atributos privados:
 //     std::string nombre;

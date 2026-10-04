@@ -4,13 +4,10 @@
 #include <iostream>
 
 
-Playlists::Playlist(std::string nombre,std::vector<Cancion*> canciones,std::vector<Podcast*> podcasts): nombre(nombre), canciones(canciones), podcasts(podcasts) {
+Playlist::Playlist(std::vector<Cancion*> canciones, std::vector<Podcast*> podcasts){
+    
 }
 
-bool Playlist::agregarCancion(Cancion* cancion){
-     canciones.push_back(cancion);
-    return true;
-}
 // TODO 4.1: implementa el constructor de Playlist.
 
 // TODO 4.2: implementa  bool Playlist::agregarCancion(Cancion* cancion)
