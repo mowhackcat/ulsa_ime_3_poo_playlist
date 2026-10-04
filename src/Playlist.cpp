@@ -32,28 +32,25 @@ return false;
 }
 
 int Playlist::cantidadPistas() const{
-    return this->canciones.size();
-    std::cout <<" canciones\n";
-    return this->podcasts.size();
-    std::cout <<" podcasts\n";
+    return this->canciones.size() + this->podcasts.size();
 }
 
 Duracion Playlist::duracionTotal() const {
 int total = 0;
-    for(size_t i = 0; i < this->canciones.size(); i ++){
+for (size_t i = 0; i < this->canciones.size(); ++i) {
 total += this->canciones[i]->getDuracion().totalSegundos();
 }
- for(size_t  i = 0; i < this->podcasts.size(); i ++){
+for(size_t  i = 0; i < this->podcasts.size(); i ++){
 total += this->podcasts[i]->getDuracion().totalSegundos();
 }
 int minutos = total / 60;
-    int segundos = total % 60;
-    return Duracion(minutos, segundos); 
+int segundos = total % 60;
+return Duracion(minutos, segundos); 
 }
 
 void Playlist::mostrar() const{
-    cantidadPistas();
-     for(size_t  i = 0; i < this->canciones.size(); i ++){
+cantidadPistas();
+for(size_t  i = 0; i < this->canciones.size(); i ++){
  this->canciones[i]->mostrar();
 }
  for(size_t  i = 0; i < this->podcasts.size(); i ++){

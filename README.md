@@ -53,11 +53,12 @@ Verbos: Titulo, Nombre,Artista, Genero , Anfitrion y numero de episodios
 
 **3.2 Experimentos guiados**
 
-Experimento 1, orden de construcción y destrucción: _____
+Experimento 1, orden de construcción y destrucción: _se coonstruye Duracion -> Pista -> Cancion
+se destruye Cancion -> Pista-> Duracion->
 
 Experimento 2, ¿quién es dueño de quién?: _____
 
-Experimento 3, un objeto en dos playlists: _____
+Experimento 3, un objeto en dos playlists: el titulo cambia en ambos___
 
 ## Fase 4. Probar y mejorar
 
