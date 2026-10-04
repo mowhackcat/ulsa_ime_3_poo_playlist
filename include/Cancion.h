@@ -8,13 +8,13 @@
 
 #include "Pista.h"
 
-class Cancion : public Pista {
+class Cancion : public Pista{
     private:
 std::string genero;      // TODO 3.1: declara la clase Cancion derivada de Pista con herencia pública.
 std::string artista;      //   Atributos privados: artista, genero.
 
     public:
-    Cancion() {std:: cout << "inizializando cancion\n";}
+    Cancion() {}
 Cancion (const std::string& genero, std::string& artista, std::string& titulo, int& min, int& seg );    //   Constructor: recibe titulo, min, seg, artista y genero.
 std::string getArtista() const;//   Accedentes const: getArtista(), getGenero().
 std::string getGenero() const;

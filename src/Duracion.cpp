@@ -34,7 +34,7 @@ int Duracion::totalSegundos() const {
 //   Devuelve la duración completa expresada en segundos.
 
 void Duracion::imprimir() const {
-std::cout << Duracion::getMinutos() << ":" << Duracion::getSegundos();
+std::cout << getMinutos() << ":" << getSegundos();
 };// TODO 1.3: implementa  void Duracion::imprimir() const
 //   Imprime con el formato m:ss (por ejemplo 3:05, no 3:5).
 

@@ -3,14 +3,15 @@
 
 #ifndef DURACION_H
 #define DURACION_H
+#include <string>
 
-class Duracion {
+class Duracion{
 private:
     int minutos;
     int segundos;
 
 public:
-Duracion() {std::cout << "Construye Duracion\n";}
+Duracion() {}
     Duracion(int min, int seg);
 
     int getMinutos() const;

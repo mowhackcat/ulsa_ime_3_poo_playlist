@@ -8,10 +8,16 @@
 
 #include "Pista.h"
 
-class Podcast : public Pista {
+class Podcast : public Pista{
     private:
     std::string anfitrion;
     int numEpisodios;
+public:
+Podcast() {}
+Podcast (const std::string& anfitrion, int numEpisodios, std::string& titulo, int& min, int& seg );
+std::string getAnfitrion() const;
+int getNumEpisodios() const;
+void mostrar() const;
 
 };
 // TODO 3.2: declara la clase Podcast derivada de Pista con herencia pública.

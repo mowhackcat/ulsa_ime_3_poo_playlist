@@ -29,6 +29,7 @@ void Pista::setTitulo(const std::string& nuevoTitulo){
 //   Aplica la misma regla del título vacío.
 
 void Pista::mostrarInfo() const { 
-std::cout << Pista::getTitulo() << duracion.getMinutos() << duracion.getSegundos();
+std::cout << Pista::getTitulo();
+duracion.imprimir();
 };// TODO 2.3: implementa  void Pista::mostrarInfo() const
 //   Imprime el título y la duración en una sola línea.

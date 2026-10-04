@@ -48,7 +48,7 @@ Verbos: Titulo, Nombre,Artista, Genero , Anfitrion y numero de episodios
 | # | Duda | Cómo la resolví | Fuente |
 | --- | --- | --- | --- |
 | 1 | ___Llamar al constructor de Pista desde la lista de inicialización__ | _____ | _____ |
-| 2 | _____ | _____ | _____ |
+| 2 | ____Intentar no modificar la variable en la clase_ | _this->____ | _____ |
 | 3 | _____ | _____ | _____ |
 
 **3.2 Experimentos guiados**
