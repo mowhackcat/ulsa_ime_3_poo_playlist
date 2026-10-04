@@ -1,12 +1,10 @@
 // Implementación de la clase Playlist.
 
-#include "Playlist.h"
+#include "../include/Playlist.h"
 #include <iostream>
 
-
-Playlist::Playlist(std::vector<Cancion*> canciones, std::vector<Podcast*> podcasts){
+Playlist::Playlist(std::vector<Cancion*> canciones, std::vector<Podcast*> podcasts): nombre(nombre), canciones(canciones), podcasts(podcasts) {}
     
-}
 
 // TODO 4.1: implementa el constructor de Playlist.
 
