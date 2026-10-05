@@ -47,8 +47,8 @@ Verbos: Titulo, Nombre,Artista, Genero , Anfitrion y numero de episodios
 
 | # | Duda | Cómo la resolví | Fuente |
 | --- | --- | --- | --- |
-| 1 | ___Llamar al constructor de Pista desde la lista de inicialización__ | _____ | _____ |
-| 2 | ____Intentar no modificar la variable en la clase_ | _this->____ | _____ |
+| 1 | ___el formato para el tiempo__ | ___con un poco de investigacion__ | __https://www.geeksforgeeks.org/cpp/iomanip-in-cpp/___ |
+| 2 | ____Intentar no modificar la variable en la clase_ | _this->____ | ___https://www.geeksforgeeks.org/cpp/this-pointer-in-c/__ |
 | 3 | _____ | _____ | _____ |
 
 **3.2 Experimentos guiados**
@@ -56,9 +56,9 @@ Verbos: Titulo, Nombre,Artista, Genero , Anfitrion y numero de episodios
 Experimento 1, orden de construcción y destrucción: _se coonstruye Duracion -> Pista -> Cancion
 se destruye Cancion -> Pista-> Duracion->
 
-Experimento 2, ¿quién es dueño de quién?: _____
+Experimento 2, ¿quién es dueño de quién?: __cancion es su propio dueno, no se destruira___
 
-Experimento 3, un objeto en dos playlists: el titulo cambia en ambos___
+Experimento 3, un objeto en dos playlists: el titulo cambia en ambos__si_
 
 ## Fase 4. Probar y mejorar
 
@@ -94,7 +94,7 @@ Retos opcionales que intenté: _____
 
 **6.1 ¿Qué aprendiste en esta práctica?**
 
-[Inserta aquí tu respuesta]
+como usar la herencia
 
 **6.2 ¿Qué cambiarías de tu proceso la próxima vez?**
 
