@@ -6,29 +6,34 @@
 Playlist::Playlist(const std::string& nombre): nombre(nombre) {}
 bool Playlist::agregarCancion(Cancion* canciones){
      if(canciones  == nullptr){
+        std::cout << "false\n";
         return false;
     }
     for(size_t i = 0; i < this->canciones.size(); i ++){
      if(canciones == this->canciones[i]){
+std::cout << "false\n";
 return false;
     }
 }
     this->canciones.push_back(canciones);
+    std::cout << "false\n";
     return true;
 }
 
 bool Playlist::agregarPodcast(Podcast* podcasts){
          if(podcasts  == nullptr){
+        std::cout << "false\n";
         return false;
     }
  for(size_t x = 0; x < this->podcasts.size(); x ++){
      if(podcasts == this->podcasts[x]){
+std::cout << "false\n";
 return false;
     }
 }
     this->podcasts.push_back(podcasts);
-    return true;
-
+ std::cout << "true\n";
+ return true;
 }
 
 int Playlist::cantidadPistas() const{
@@ -49,13 +54,20 @@ return Duracion(minutos, segundos);
 }
 
 void Playlist::mostrar() const{
+    int y =0;
+    int a =0;
+    int pistasTotal;
 cantidadPistas();
 for(size_t  i = 0; i < this->canciones.size(); i ++){
  this->canciones[i]->mostrar();
+ y++;
 }
  for(size_t  i = 0; i < this->podcasts.size(); i ++){
 this->podcasts[i]->mostrar();
+a++;
 }
+pistasTotal = a+y;
+std::cout << pistasTotal << " pistas\n"; 
 this->duracionTotal().imprimir();
 }
 // TODO 4.1: implementa el constructor de Playlist.

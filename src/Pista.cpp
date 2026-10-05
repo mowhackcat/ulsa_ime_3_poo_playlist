@@ -7,7 +7,7 @@
 // La Duracion se construye en la lista de inicialización.
 Pista::Pista(const std::string& titulo, int min, int seg)
     : titulo(titulo), duracion(min, seg) {
-    if(titulo.empty()){
+    if(this->titulo.empty()){
         std::cout << "se guardara sin titulo\n" ;
        this->titulo = "sin titulo bozo\n";
     } // TODO 2.1: si el título llega vacío, guarda "Sin título".

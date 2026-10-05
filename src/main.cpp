@@ -22,24 +22,20 @@ int main() {
     std::cout << "Plantilla lista. Completa los TODO de include/ y src/." << std::endl;
 
     // TODO 5.1: crea la biblioteca: al menos tres canciones y un podcast.
-Cancion cancion1("PrivateLife ", "Rock ", "Danny ", 3 ,75);
+Cancion cancion1("Rock ", "Danny ", "",3 ,75);
 Cancion cancion2("virtualInsanity ", "Rock ", "Jamiroquai ", 4 ,01);
 Cancion cancion3("bloodystream ", "Rock ", "JJBA ", 4 ,56);
 Podcast podcast1("Joyline ", 24, "stoneocean ", 5, 23 );
 
 Playlist playlist1("playlist1");
 playlist1.agregarCancion(&cancion1);
+playlist1.agregarCancion(&cancion2);
+playlist1.agregarPodcast(&podcast1);
 
-
-
-Playlist playlist2("playlist2");
-playlist2.agregarCancion(&cancion1);
-
-cancion1.setTitulo("bozo");
 
 
 playlist1.mostrar();
-playlist2.mostrar();
+
 
     // TODO 5.2: crea dos playlists y agrega pistas a cada una.
     //   Al menos una canción debe estar en las dos playlists.
