@@ -53,8 +53,7 @@ Verbos: Titulo, Nombre,Artista, Genero , Anfitrion y numero de episodios
 
 **3.2 Experimentos guiados**
 
-Experimento 1, orden de construcción y destrucción: _se coonstruye Duracion -> Pista -> Cancion
-se destruye Cancion -> Pista-> Duracion->
+Experimento 1, orden de construcción y destrucción: _se construye Duracion -> Pista -> Cancion..... se destruyeCancion -> Pista-> Duracion->
 
 Experimento 2, ¿quién es dueño de quién?: __cancion es su propio dueno, no se destruira___
 
@@ -79,7 +78,7 @@ Experimento 3, un objeto en dos playlists: el titulo cambia en ambos__si_
 
 | # | Falla o mejora detectada | Qué cambié | Por qué |
 | --- | --- | --- | --- |
-| 1 | ___no detectaba el playlist.h__ | __cambiarlo a .../include/playlist.h___ | _____ |
+| 1 | ___no detectaba el playlist.h__ | __cambiarlo a .../include/playlist.h___ | _fue el unico en el que sucedio eso, no tengo idea de que paso___ |
 | 2 | _____ | _____ | _____ |
 
 Retos opcionales que intenté: _____
@@ -88,7 +87,7 @@ Retos opcionales que intenté: _____
 
 **5.1 Enlace a mi fork**
 
-[Inserta aquí el enlace a tu fork]
+https://github.com/mowhackcat/ulsa_ime_3_poo_playlist/tree/main
 
 ## Cierre y reflexión
 
