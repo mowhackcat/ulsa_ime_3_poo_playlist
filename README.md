@@ -66,20 +66,20 @@ Experimento 3, un objeto en dos playlists: el titulo cambia en ambos___
 
 | # | Caso | Resultado esperado | Resultado obtenido | ¿Pasa? |
 | --- | --- | --- | --- | --- |
-| 1 | Duración normal `Duracion(3, 45)` | 3:45 | _____ | _____ |
-| 2 | Segundos mayores a 59 `Duracion(0, 75)` | 1:15 | _____ | _____ |
-| 3 | Valores negativos `Duracion(-2, 10)` | 0:00 | _____ | _____ |
-| 4 | Título vacío | "Sin título" | _____ | _____ |
-| 5 | Playlist vacía | 0:00 y 0 pistas | _____ | _____ |
-| 6 | Canción duplicada | La segunda vez devuelve `false` | _____ | _____ |
-| 7 | Puntero nulo | Devuelve `false` | _____ | _____ |
-| 8 | Total con 2 canciones y 1 podcast | Suma correcta en m:ss | _____ | _____ |
+| 1 | Duración normal `Duracion(3, 45)` | 3:45 | __3:45__ | __sucede como esperado__ |
+| 2 | Segundos mayores a 59 `Duracion(0, 75)` | 1:15 | __1:15___ | __sucede como esperado_ |
+| 3 | Valores negativos `Duracion(-2, 10)` | 0:00 | ___0:00__ | __aparece como si no tuviera duracion___ |
+| 4 | Título vacío | "Sin título" | ___"sin titulo"__ | ___aparece como si no tuviera titulo__ |
+| 5 | Playlist vacía | 0:00 y 0 pistas | __0:00___ | ___no aparece nada__ |
+| 6 | Canción duplicada | La segunda vez devuelve `false` | false_____ | ___no se agrega la segunda vez__ |
+| 7 | Puntero nulo | Devuelve `false` | __false___ | ___no apunta a nada__ |
+| 8 | Total con 2 canciones y 1 podcast | Suma correcta en m:ss | __13.39__ | ____se suman correctamente_ |
 
 **4.2 Bitácora de mejoras**
 
 | # | Falla o mejora detectada | Qué cambié | Por qué |
 | --- | --- | --- | --- |
-| 1 | _____ | _____ | _____ |
+| 1 | ___no detectaba el playlist.h__ | __cambiarlo a .../include/playlist.h___ | _____ |
 | 2 | _____ | _____ | _____ |
 
 Retos opcionales que intenté: _____
@@ -98,4 +98,4 @@ Retos opcionales que intenté: _____
 
 **6.2 ¿Qué cambiarías de tu proceso la próxima vez?**
 
-[Inserta aquí tu respuesta]
+el tiempo que tarde
